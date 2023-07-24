@@ -1,4 +1,4 @@
-package com.aira;
+package com.aira.sp02;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
