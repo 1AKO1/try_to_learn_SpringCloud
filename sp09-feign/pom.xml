@@ -9,15 +9,19 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.aira</groupId>
-    <artifactId>sp06-ribbon</artifactId>
+    <artifactId>sp09-feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sp06-ribbon</name>
-    <description>sp06-ribbon</description>
+    <name>sp09-feign</name>
+    <description>sp09-feign</description>
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -27,18 +31,31 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.aira</groupId>
-            <artifactId>sp01-commons</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
-            <groupId>org.springframework.retry</groupId>
-            <artifactId>spring-retry</artifactId>
+            <groupId>com.aira</groupId>
+            <artifactId>sp01-commons</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
     <dependencyManagement>

@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.aira</groupId>
-    <artifactId>sp06-ribbon</artifactId>
+    <artifactId>sp07-hystrix</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sp06-ribbon</name>
-    <description>sp06-ribbon</description>
+    <description>sp07-hystrix</description>
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
@@ -39,6 +39,15 @@
         <dependency>
             <groupId>org.springframework.retry</groupId>
             <artifactId>spring-retry</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
     <dependencyManagement>
