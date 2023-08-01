@@ -17,3 +17,6 @@ pom写入这个之后，很多依赖都不用声明版本了。。省的一堆�
         </dependencies>
     </dependencyManagement>
 ```
+
+# 进程开启情况
+![img/img.png](img/img.png)
