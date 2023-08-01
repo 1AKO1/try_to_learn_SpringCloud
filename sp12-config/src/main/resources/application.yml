@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/1AKO1/sp-config
+          search-paths: config
+          skip-ssl-validation: true
+          username: 1418407007@qq.com
+          password: ljwyhbyzyl0403!
+
+server:
+  port: 6001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:2001/eureka, http://localhost:2002/eureka
